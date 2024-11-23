@@ -15,19 +15,16 @@
         /* Basic styling for the page */
         body {
             font-family: Arial, sans-serif;
-            background-image: url('RegisterImage.jpg'); /* Background image */
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
             height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             color: white;
+            padding-top: 70px; /* Make room for fixed navbar */
         }
 
-        /* Navigation Bar */
+        /* Navigation Bar (Exact same as login page, no changes) */
         .nav-bar {
             display: flex;
             justify-content: space-between;
@@ -92,7 +89,8 @@
             color: #fff;
         }
 
-        a {
+        /* Go to Login Button Styling */
+        .go-to-login-btn {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
@@ -100,16 +98,22 @@
             color: white;
             border-radius: 5px;
             text-decoration: none;
+            transition: background-color 0.3s ease;
         }
 
-        a:hover {
+        .go-to-login-btn:hover {
             background-color: #2ecc71;
+        }
+
+        /* Additional styles to avoid button overlap */
+        .main-container {
+            margin-top: 100px; /* To prevent overlap with navbar */
         }
     </style>
 </head>
 <body>
 
-<!-- Navigation Bar -->
+<!-- Navigation Bar (Exact same as login page, no changes) -->
 <div class="nav-bar">
     <div class="nav-links">
         <a href="Home.php">Home</a>
@@ -127,7 +131,8 @@
 <div class="success-container">
     <h1>Account Created Successfully!</h1>
     <p>Congratulations! Your account has been created successfully. You can now log in and start enjoying the features of Fit4Life.</p>
-    <a href="Login.php">Go to Login Page</a>
+    <!-- Separate "Go to Login" Button -->
+    <a href="Login.php" class="go-to-login-btn">Go to Login Page</a>
 </div>
 
 </body>
