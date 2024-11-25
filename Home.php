@@ -80,6 +80,37 @@
             background-color: #005fa3;
         }
 
+        /* Hero Section */
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            padding-top: 80px; /* Space for the fixed navbar */
+            text-align: center;
+        }
+
+        .hero-logo {
+            margin-bottom: -10px; /* Reduced the margin to bring it closer */
+        }
+
+        .hero-logo img {
+            max-height: 150px; /* Adjust logo size */
+            width: auto;
+        }
+
+        .hero-section h1 {
+            font-size: 48px;
+            margin-top: 10px; /* Reduced the margin to bring it closer */
+            margin-bottom: 5px; /* Keep text closer to the logo */
+        }
+
+        .hero-section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
         /* Main Content */
         main {
             padding: 20px;
@@ -88,7 +119,7 @@
             background: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
-            margin-top: 80px; /* Space for the fixed navigation bar */
+            margin-top: 50px; /* Space for the fixed navigation bar */
         }
 
         section {
@@ -127,7 +158,7 @@
     </style>
 </head>
 <body>
-<!-- New Navigation Bar -->
+<!-- Navigation Bar -->
 <div class="nav-bar">
     <div class="nav-links">
         <a href="Home.php">Home</a>
@@ -138,6 +169,16 @@
     </div>
     <div class="company-name">Fit4Life</div>
     <a href="Login.php" class="login-button">Login/Register</a>
+</div>
+
+<!-- Hero Section (logo displayed on the page) -->
+<div class="hero-section">
+    <div class="hero-logo">
+        <img src="logo.jpg" alt="Fit4Life Logo"> <!-- Display the logo -->
+    </div>
+    <h1>Welcome to Fit4Life</h1>
+    <p>Your Fitness Journey Starts Here</p>
+    <a href="Activities.php" class="login-button">Start Tracking</a>
 </div>
 
 <!-- Main Content -->
@@ -167,9 +208,6 @@
             "Using this app has been a game-changer for my gym consistency. Love it!" - John S.
         </blockquote>
     </section>
-    <section class="cta-section">
-        <!-- Add call-to-action content here -->
-    </section>
 </main>
 
 <footer>
@@ -177,4 +215,3 @@
 </footer>
 </body>
 </html>
-
